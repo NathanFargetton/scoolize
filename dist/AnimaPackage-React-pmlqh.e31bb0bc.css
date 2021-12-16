@@ -1,0 +1,534 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+
+@import url("https://fonts.googleapis.com/css?family=Heebo:400,700,900|Roboto:400,500|Montserrat:700,600");
+@font-face {
+  font-family: "SegoeUI-Regular";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/segoeui.c4ffa0c2.ttf") format("truetype");
+}
+@font-face {
+  font-family: "SegoeUI-Bold";
+  font-style: normal;
+  font-weight: 700;
+  src: url("/segoeuib.54206c96.ttf") format("truetype");
+}
+@font-face {
+  font-family: "SegoeUI-Light";
+  font-style: normal;
+  font-weight: 300;
+  src: url("/segoeuil.e0d3969a.ttf") format("truetype");
+}
+@font-face {
+  font-family: "SegoeUI-Black";
+  font-style: normal;
+  font-weight: 900;
+  src: url("/cloud-documents[1].92edf29a.null");
+}
+
+.screen a {
+  display: contents;
+  text-decoration: none;
+}
+
+.container-center-horizontal {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  pointer-events: none;
+  width: 100%;
+}
+
+.container-center-horizontal > * {
+  flex-shrink: 0;
+  pointer-events: auto;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+:root { 
+  --alizarin-crimson: #e62b34;
+  --black: #000000;
+  --black-2: #0000004d;
+  --black-3: #0000007d;
+  --black-4: #00000099;
+  --black-haze: #f6f6f9;
+  --blackcurrant: #352641;
+  --chicago: #605d5d80;
+  --dove-gray: #707070;
+  --dove-gray-2: #70707082;
+  --dove-gray-3: #6d6d6d;
+  --east-bay: #3c3f7e;
+  --east-bay-2: #3c3f7ecf;
+  --eerie-black: #202020;
+  --ff5d22: #ff5d22;
+  --gray-nurse: #eaeaea;
+  --jade: #13ab46;
+  --licorice: #131313;
+  --mandarin-pearl: #fa794a;
+  --red: #ff0000;
+  --star-dust: #9f9f9f;
+  --star-dust-2: #9b9b9b;
+  --suva-gray: #878787;
+  --white: #ffffff;
+ 
+  --font-size-l: 25px;
+  --font-size-m: 20px;
+  --font-size-s: 18px;
+  --font-size-xs: 16px;
+  --font-size-xxs: 15px;
+  --font-size-xxxs: 14px;
+  --font-size-xxxxs: 12px;
+ 
+  --font-family-heebo: "Heebo", Helvetica;
+  --font-family-montserrat: "Montserrat", Helvetica;
+  --font-family-roboto: "Roboto", Helvetica;
+  --font-family-segoeui-black: "SegoeUI-Black", Helvetica;
+  --font-family-segoeui-bold: "SegoeUI-Bold", Helvetica;
+  --font-family-segoeui-light: "SegoeUI-Light", Helvetica;
+  --font-family-segoeui-regular: "SegoeUI-Regular", Helvetica;
+}
+
+.inscription {
+  align-items: flex-end;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  height: 1847px;
+  position: relative;
+  width: 1966px;
+}
+
+.text-field-filled {
+  height: 56px;
+  margin-right: 1.98px;
+  margin-top: 36px;
+  width: 589px;
+}
+
+.text-field-filled-1,
+.text-field-filled-2,
+.text-field-filled-3,
+.text-field-filled-4,
+.text-field-filled-5 {
+  height: 56px;
+  margin-right: 1.98px;
+  margin-top: 23px;
+  width: 589px;
+}
+
+.checkbox-unselected {
+  align-self: flex-start;
+  height: 24px;
+  margin-left: 7.5px;
+  margin-top: 23px;
+  width: 24px;
+}
+
+.button-raised {
+  height: 56px;
+  left: 745px;
+  position: absolute;
+  top: 827px;
+  width: 248px;
+}
+
+.button-raised {
+  height: auto !important;
+  width: auto !important;
+}
+
+.mdc-checkbox {
+  box-sizing: content-box;
+}
+
+.button-raised .mdc-button {
+  --mdc-theme-primary: #FF5D22;
+}
+
+.text-field-filled-1 .mdc-text-field--focused:not(.mdc-text-field--disabled) .mdc-floating-label {
+  color: var(--mdc-theme-primary);
+}
+
+.checkbox-unselected .mdc-checkbox--selected.mdc-ripple-upgraded--background-focused .mdc-checkbox__ripple::before, .checkbox-unselected .mdc-checkbox--selected.mdc-ripple-upgraded--background-focused .mdc-checkbox__ripple::after {
+  background-color: #FF5D22 !important;
+}
+
+.text-field-filled .mdc-text-field--focused:not(.mdc-text-field--disabled) .mdc-floating-label {
+  color: var(--mdc-theme-primary);
+}
+
+.checkbox-unselected .mdc-checkbox__native-control:enabled:checked~.mdc-checkbox__background, .checkbox-unselected .mdc-checkbox--selected .mdc-checkbox__native-control~.mdc-checkbox__background, .checkbox-unselected .mdc-checkbox--anim-checked-unchecked .mdc-checkbox__native-control~.mdc-checkbox__background {
+  background-color: #FF5D22 !important;
+  border-color: #FF5D22 !important;
+}
+
+
+
+.inscription-reussie {
+  align-items: flex-end;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  height: 1472px;
+  overflow: hidden;
+  position: relative;
+  width: 1920px;
+}
+
+
+.enregistrement-etablissement {
+  align-items: flex-end;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  height: 1758px;
+  overflow: hidden;
+  position: relative;
+  width: 1920px;
+}
+
+
+.diplomes {
+  align-items: flex-end;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  height: 3197px;
+  overflow: hidden;
+  position: relative;
+  width: 1920px;
+}
+
+
+.ecoles {
+  align-items: flex-end;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  height: 3188px;
+  overflow: hidden;
+  position: relative;
+  width: 1920px;
+}
+
+
+.filieres {
+  align-items: flex-end;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  height: 4081px;
+  overflow: hidden;
+  position: relative;
+  width: 1920px;
+}
+
+
+.page-d-accueil-2 {
+  align-items: center;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  height: 4798px;
+  position: relative;
+  width: 1920px;
+}
+
+
+.validation-1 {
+  align-items: center;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  height: 1078px;
+  padding: 84.5px 562.0px;
+  position: relative;
+  width: 1920px;
+}
+
+
+.inscription-etablissement-reussis {
+  align-items: flex-end;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  height: 1472px;
+  overflow: hidden;
+  position: relative;
+  width: 1920px;
+}
+
+
+.page-d-accueil {
+  align-items: flex-end;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  height: 4081px;
+  overflow: hidden;
+  position: relative;
+  width: 1920px;
+}
+
+.text-field-filled {
+  height: 41px;
+  left: 1131px;
+  position: absolute;
+  top: 0;
+  width: 219px;
+}
+
+.text-field-filled .mdc-text-field--focused:not(.mdc-text-field--disabled) .mdc-floating-label {
+  color: var(--mdc-theme-primary);
+}
+
+
+.formation {
+  align-items: flex-end;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  height: 7656px;
+  position: relative;
+  width: 1920px;
+}
+
+
+.trouver-ecole-1-13 {
+  align-items: flex-end;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  height: 2406px;
+  position: relative;
+  width: 1920px;
+}
+
+
+.web-1920-10 {
+  align-items: flex-end;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  height: 1080px;
+  overflow: hidden;
+  width: 1920px;
+}
+
+
+.trouver-ecole-1-3 {
+  align-items: flex-end;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  height: 2195px;
+  position: relative;
+  width: 1920px;
+}
+
+
+.test-orientation {
+  align-items: center;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  height: 2825px;
+  position: relative;
+  width: 1920px;
+}
+
+
+.trouver-ecole-1 {
+  align-items: flex-end;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  height: 2242px;
+  position: relative;
+  width: 1920px;
+}
+
+
+.trouver-ecole-1-12 {
+  align-items: flex-end;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  height: 2406px;
+  position: relative;
+  width: 1920px;
+}
+
+
+.liste-3 {
+  align-items: flex-end;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  height: 2152px;
+  overflow: hidden;
+  position: relative;
+  width: 1920px;
+}
+
+
+.trouver-ecole-1-4 {
+  align-items: flex-end;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  height: 1464px;
+  position: relative;
+  width: 1920px;
+}
+
+
+.trouver-ecole-1-1 {
+  align-items: flex-end;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  height: 1970px;
+  position: relative;
+  width: 1920px;
+}
+
+
+.liste-2 {
+  align-items: flex-end;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  height: 2728px;
+  overflow: hidden;
+  position: relative;
+  width: 1920px;
+}
+
+
+.validation-2 {
+  align-items: flex-start;
+  background-color: var(--white);
+  display: flex;
+  overflow: hidden;
+  width: 1920px;
+}
+
+
+.trouver-ecole-1-5 {
+  align-items: flex-end;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  height: 1464px;
+  position: relative;
+  width: 1920px;
+}
+
+
+.trouver-ecole-1-2 {
+  align-items: flex-end;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  height: 1463px;
+  position: relative;
+  width: 1920px;
+}
+
+
+.validation {
+  align-items: flex-start;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  height: 1648px;
+  overflow: hidden;
+  padding: 62.0px 25.0px;
+  width: 1920px;
+}
+
+
+.page-d-accueil-1 {
+  align-items: center;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  height: 4081px;
+  overflow: hidden;
+  position: relative;
+  width: 1920px;
+}
+
+
+.trouver-ecole-1-10 {
+  align-items: flex-end;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  height: 1906px;
+  overflow: hidden;
+  position: relative;
+  width: 1920px;
+}
+
+
+.liste-1 {
+  align-items: flex-start;
+  background-color: var(--white);
+  display: flex;
+  height: 2102px;
+  overflow: hidden;
+  width: 1920px;
+}
+
+
+.trouver-ecole-1-7 {
+  align-items: flex-end;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  height: 1450px;
+  position: relative;
+  width: 1920px;
+}
+
+
+.trouver-ecole-1-9 {
+  align-items: flex-end;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  height: 2406px;
+  position: relative;
+  width: 1920px;
+}
+
+
+.trouver-ecole-1-8 {
+  align-items: flex-end;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  height: 1450px;
+  position: relative;
+  width: 1920px;
+}
+
+
+.trouver-ecole-1-11 {
+  align-items: flex-end;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  height: 2406px;
+  position: relative;
+  width: 1920px;
+}
+
+
+
+/*# sourceMappingURL=/AnimaPackage-React-pmlqh.e31bb0bc.css.map */

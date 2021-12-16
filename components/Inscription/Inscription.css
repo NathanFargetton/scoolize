@@ -1,0 +1,75 @@
+.inscription {
+  align-items: flex-end;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  height: 1847px;
+  position: relative;
+  width: 1966px;
+}
+
+.text-field-filled {
+  height: 56px;
+  margin-right: 1.98px;
+  margin-top: 36px;
+  width: 589px;
+}
+
+.text-field-filled-1,
+.text-field-filled-2,
+.text-field-filled-3,
+.text-field-filled-4,
+.text-field-filled-5 {
+  height: 56px;
+  margin-right: 1.98px;
+  margin-top: 23px;
+  width: 589px;
+}
+
+.checkbox-unselected {
+  align-self: flex-start;
+  height: 24px;
+  margin-left: 7.5px;
+  margin-top: 23px;
+  width: 24px;
+}
+
+.button-raised {
+  height: 56px;
+  left: 745px;
+  position: absolute;
+  top: 827px;
+  width: 248px;
+}
+
+.button-raised {
+  height: auto !important;
+  width: auto !important;
+}
+
+.mdc-checkbox {
+  box-sizing: content-box;
+}
+
+.button-raised .mdc-button {
+  --mdc-theme-primary: #FF5D22;
+}
+
+.text-field-filled-1 .mdc-text-field--focused:not(.mdc-text-field--disabled) .mdc-floating-label {
+  color: var(--mdc-theme-primary);
+}
+
+.checkbox-unselected .mdc-checkbox--selected.mdc-ripple-upgraded--background-focused .mdc-checkbox__ripple::before, .checkbox-unselected .mdc-checkbox--selected.mdc-ripple-upgraded--background-focused .mdc-checkbox__ripple::after {
+  background-color: #FF5D22 !important;
+}
+
+.text-field-filled .mdc-text-field--focused:not(.mdc-text-field--disabled) .mdc-floating-label {
+  color: var(--mdc-theme-primary);
+}
+
+.checkbox-unselected .mdc-checkbox__native-control:enabled:checked~.mdc-checkbox__background, .checkbox-unselected .mdc-checkbox--selected .mdc-checkbox__native-control~.mdc-checkbox__background, .checkbox-unselected .mdc-checkbox--anim-checked-unchecked .mdc-checkbox__native-control~.mdc-checkbox__background {
+  background-color: #FF5D22 !important;
+  border-color: #FF5D22 !important;
+}
+
+

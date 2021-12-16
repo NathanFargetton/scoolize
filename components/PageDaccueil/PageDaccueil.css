@@ -1,0 +1,23 @@
+.page-d-accueil {
+  align-items: flex-end;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  height: 4081px;
+  overflow: hidden;
+  position: relative;
+  width: 1920px;
+}
+
+.text-field-filled {
+  height: 41px;
+  left: 1131px;
+  position: absolute;
+  top: 0;
+  width: 219px;
+}
+
+.text-field-filled .mdc-text-field--focused:not(.mdc-text-field--disabled) .mdc-floating-label {
+  color: var(--mdc-theme-primary);
+}
+

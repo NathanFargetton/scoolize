@@ -1,0 +1,10 @@
+.page-d-accueil-2 {
+  align-items: center;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  height: 4798px;
+  position: relative;
+  width: 1920px;
+}
+

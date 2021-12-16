@@ -1,0 +1,10 @@
+.formation {
+  align-items: flex-end;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  height: 7656px;
+  position: relative;
+  width: 1920px;
+}
+

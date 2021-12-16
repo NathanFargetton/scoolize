@@ -1,0 +1,42 @@
+:root { 
+  --alizarin-crimson: #e62b34;
+  --black: #000000;
+  --black-2: #0000004d;
+  --black-3: #0000007d;
+  --black-4: #00000099;
+  --black-haze: #f6f6f9;
+  --blackcurrant: #352641;
+  --chicago: #605d5d80;
+  --dove-gray: #707070;
+  --dove-gray-2: #70707082;
+  --dove-gray-3: #6d6d6d;
+  --east-bay: #3c3f7e;
+  --east-bay-2: #3c3f7ecf;
+  --eerie-black: #202020;
+  --ff5d22: #ff5d22;
+  --gray-nurse: #eaeaea;
+  --jade: #13ab46;
+  --licorice: #131313;
+  --mandarin-pearl: #fa794a;
+  --red: #ff0000;
+  --star-dust: #9f9f9f;
+  --star-dust-2: #9b9b9b;
+  --suva-gray: #878787;
+  --white: #ffffff;
+ 
+  --font-size-l: 25px;
+  --font-size-m: 20px;
+  --font-size-s: 18px;
+  --font-size-xs: 16px;
+  --font-size-xxs: 15px;
+  --font-size-xxxs: 14px;
+  --font-size-xxxxs: 12px;
+ 
+  --font-family-heebo: "Heebo", Helvetica;
+  --font-family-montserrat: "Montserrat", Helvetica;
+  --font-family-roboto: "Roboto", Helvetica;
+  --font-family-segoeui-black: "SegoeUI-Black", Helvetica;
+  --font-family-segoeui-bold: "SegoeUI-Bold", Helvetica;
+  --font-family-segoeui-light: "SegoeUI-Light", Helvetica;
+  --font-family-segoeui-regular: "SegoeUI-Regular", Helvetica;
+}

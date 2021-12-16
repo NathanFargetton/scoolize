@@ -1,0 +1,49 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+
+@import url("https://fonts.googleapis.com/css?family=Heebo:400,700,900|Roboto:400,500|Montserrat:700,600");
+@font-face {
+  font-family: "SegoeUI-Regular";
+  font-style: normal;
+  font-weight: 400;
+  src: url("static/fonts/segoeui.ttf") format("truetype");
+}
+@font-face {
+  font-family: "SegoeUI-Bold";
+  font-style: normal;
+  font-weight: 700;
+  src: url("static/fonts/segoeuib.ttf") format("truetype");
+}
+@font-face {
+  font-family: "SegoeUI-Light";
+  font-style: normal;
+  font-weight: 300;
+  src: url("static/fonts/segoeuil.ttf") format("truetype");
+}
+@font-face {
+  font-family: "SegoeUI-Black";
+  font-style: normal;
+  font-weight: 900;
+  src: url("static/fonts/cloud-documents[1]");
+}
+
+.screen a {
+  display: contents;
+  text-decoration: none;
+}
+
+.container-center-horizontal {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  pointer-events: none;
+  width: 100%;
+}
+
+.container-center-horizontal > * {
+  flex-shrink: 0;
+  pointer-events: auto;
+}
+
+* {
+  box-sizing: border-box;
+}

@@ -1,0 +1,11 @@
+.validation-1 {
+  align-items: center;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  height: 1078px;
+  padding: 84.5px 562.0px;
+  position: relative;
+  width: 1920px;
+}
+
